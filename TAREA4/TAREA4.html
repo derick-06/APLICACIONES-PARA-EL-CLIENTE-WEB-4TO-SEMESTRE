@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones Matemáticas</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+
+        // Ingreso de datos
+        var num1 = parseFloat(prompt("Introduce el primer número:", 0));
+        var num2 = parseFloat(prompt("Introduce el segundo número:", 0));
+
+        // Bucle de 5 iteraciones
+        for (let i = 1; i <= 5; i++)
+        {
+            if (i == 1)
+            {
+                var suma = num1 + num2;
+                alert("PRIMERA ITERACIÓN\nSUMA: " + suma);
+            }
+            else if (i == 2)
+            {
+                var resta = num1 - num2;
+                alert("SEGUNDA ITERACIÓN\nRESTA: " + resta);
+            }
+            else if (i == 3)
+            {
+                var multiplicacion = num1 * num2;
+                alert("TERCERA ITERACIÓN\nMULTIPLICACIÓN: " + multiplicacion);
+            }
+            else if (i == 4)
+            {
+                if (num2 != 0)
+                {
+                    var division = num1 / num2;
+                    alert("CUARTA ITERACIÓN\nDIVISIÓN: " + division);
+                }
+                else
+                {
+                    alert("CUARTA ITERACIÓN\nNo se puede dividir para 0");
+                }
+            }
+            else if (i == 5)
+            {
+                var modulo = num1 % num2;
+                alert("QUINTA ITERACIÓN\nMÓDULO: " + modulo);
+            }
+        }
+
+    </script>
+
+</body>
+</html>
