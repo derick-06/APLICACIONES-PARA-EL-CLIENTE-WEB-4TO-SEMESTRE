@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Estudiantes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <h1>Registro de Estudiantes</h1>
+
+        <form id="formulario">
+
+            <div class="grupo">
+                <label>Cédula</label>
+                <input type="text" id="cedula" placeholder="1312125678">
+                <small id="errorCedula"></small>
+            </div>
+
+            <div class="grupo">
+                <label>Apellidos</label>
+                <input type="text" id="apellidos" placeholder="Guerrero Bazurto">
+                <small id="errorApellidos"></small>
+            </div>
+
+            <div class="grupo">
+                <label>Nombres</label>
+                <input type="text" id="nombres" placeholder="Pedro Xavier">
+                <small id="errorNombres"></small>
+            </div>
+
+            <div class="grupo">
+                <label>Dirección</label>
+                <input type="text" id="direccion" placeholder="Av. 10">
+                <small id="errorDireccion"></small>
+            </div>
+
+            <div class="grupo">
+                <label>Teléfono</label>
+                <input type="text" id="telefono" placeholder="0991239997">
+                <small id="errorTelefono"></small>
+            </div>
+
+            <div class="grupo">
+                <label>Correo Electrónico</label>
+                <input type="text" id="correo" placeholder="correo@gmail.com">
+                <small id="errorCorreo"></small>
+            </div>
+
+            <div class="grupo">
+                <label>Facultad</label>
+                <input type="text" id="facultad" placeholder="Software">
+                <small id="errorFacultad"></small>
+            </div>
+
+            <div class="grupo">
+                <label>Nivel</label>
+                <input type="number" id="nivel" placeholder="5">
+                <small id="errorNivel"></small>
+            </div>
+
+            <div class="grupo">
+                <label>Paralelo</label>
+                <input type="text" id="paralelo" placeholder="A">
+                <small id="errorParalelo"></small>
+            </div>
+
+            <button type="submit">Guardar Estudiante</button>
+            <button type="button" id="descargar">Descargar JSON</button>
+
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Cédula</th>
+                    <th>Apellidos</th>
+                    <th>Nombres</th>
+                    <th>Correo</th>
+                    <th>Facultad</th>
+                    <th>Nivel</th>
+                    <th>Paralelo</th>
+                    <th>Teléfono</th>
+                    <th>Dirección</th>
+                </tr>
+            </thead>
+
+            <tbody id="tablaEstudiantes"></tbody>
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
